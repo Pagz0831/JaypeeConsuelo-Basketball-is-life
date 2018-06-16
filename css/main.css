@@ -1,0 +1,258 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+body {
+	background-image: url("../images/main2.jpg");
+	background-size: cover;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.limiter {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container-login100 {
+	width: 100%;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;  
+}
+
+.container-login100::before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.wrap-login100 {
+	width: 390px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: transparent;
+}
+
+.login100-form {
+	width: 100%;
+	border-radius: 9px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* .login100-form-logo {
+	font-size: 60px; 
+	color: #333333;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 auto;
+} */
+
+.login100-form-title {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+	display: block;
+}
+
+.wrap-input100 {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #4c5159;
+	padding: 29px 0;
+}
+
+.input100 {
+	font-family: Ubuntu-Regular;
+	font-size: 20px;
+	line-height: 1.2;
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	padding: 0 10px 0 80px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+::placeholder {
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+/* yung logo sa may side */
+.focus-input100 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.focus-input100::before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	background: #4264fa;
+	background: -webkit-linear-gradient(left, #a445b2, #4264fa, #fa4299);
+	background: -o-linear-gradient(left, #a445b2, #4264fa, #fa4299);
+	background: -moz-linear-gradient(left, #a445b2, #4264fa, #fa4299);
+	background: linear-gradient(left, #a445b2, #4264fa, #fa4299);
+}
+
+.focus-input100::after {
+	font-family: Linearicons-Free;
+	font-size: 18px;
+	color: white;
+	content: attr(data-placeholder);
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 40px;
+	left: 35px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.input100:focus {
+	padding-left: 60px;
+}
+
+.input100:focus + .focus-input100::after {
+	left: 23px;
+	color: #d41872;
+}
+
+.input100:focus + .focus-input100::before {
+	width: 100%;
+}
+
+.container-login100-form-btn {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.login100-form-btn {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.2;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	min-width: 160px;
+	height: 42px;
+	border-radius: 21px;
+	background: #9818d4;
+	background: -webkit-linear-gradient(left, #b24581, #9818d4, #4264fa);
+	background: -o-linear-gradient(left, #b24581, #9818d4, #4264fa);
+	background: -moz-linear-gradient(left, #b24581, #9818d4, #4264fa);
+	background: linear-gradient(left, #b24581, #9818d4, #4264fa);
+	position: relative;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	padding-left: 10px;
+}
+
+.container-SignUp100-form-btn {
+	padding-bottom: 10px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.SignUp100-form-btn {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.2;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	min-width: 160px;
+	height: 42px;
+	border-radius: 21px;
+	background: #9818d4;
+	background: -webkit-linear-gradient(left, #b24581, #9818d4, #4264fa);
+	background: -o-linear-gradient(left, #b24581, #9818d4, #4264fa);
+	background: -moz-linear-gradient(left, #b24581, #9818d4, #4264fa);
+	background: linear-gradient(left, #b24581, #9818d4, #4264fa);
+	position: relative;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
